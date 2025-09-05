@@ -1,7 +1,7 @@
 async function getData(city) {
     try {
         const response = await fetch(
-          `http://api.weatherapi.com/v1/current.json?key=a6874fa7a2714d3486941521250509&q=${city}&aqi=no`
+          `https://api.weatherapi.com/v1/current.json?key=a6874fa7a2714d3486941521250509&q=${city}&aqi=no`
         );
 
         if (response.ok) {
@@ -38,5 +38,6 @@ searchButton.addEventListener("click", async () => {
         display.append(locElement, iconElement, tempElement);
     }
 });
+
 
 // http://api.weatherapi.com/v1/current.json?key=a6874fa7a2714d3486941521250509 &q=London&aqi=yes
